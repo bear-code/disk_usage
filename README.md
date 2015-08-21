@@ -1,1 +1,3 @@
-# server_disk_usage
+## Server Disk Usage Monitor
+
+This is a simple util to monitor free space on hard drive. It ises postmarkapp.com API to send emails.
