@@ -40,7 +40,7 @@ func SendEmail(wrapper *MailerStruct) {
   to := mail.Address{"SystemUser", wrapper.send_mail_to}
   title := "Alert: System Status Check."
 
-  body := fmt.Sprintf("<h3>Hi there,</h3> <p> The ScoutOnDemand server <b>hard drive is almost full.</b> Only <b>%d MBytes</b> left on device. (We should have at least %d Mb) </p> <p>Please contact system administrator to fix this issue.</p> <br/> <hr /> ScoutOnDemand system Monitor", wrapper.mb_available, wrapper.mb_at_least)
+  body := fmt.Sprintf("<h3>Hi there,</h3> <p> The server <b>hard drive is almost full.</b> Only <b>%d MBytes</b> left on device. (We should have at least %d Mb) </p> <p>Please contact system administrator to fix this issue.</p> <br/> <hr /> system Monitor", wrapper.mb_available, wrapper.mb_at_least)
 
   header := make(map[string]string)
   header["From"] = from.String()
